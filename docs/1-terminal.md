@@ -13,8 +13,8 @@ ls -la
 ## 2. 디렉토리 생성 및 이동
 
 ```bash
-mkdir test-dir
-cd test-dir
+mkdir mskim
+cd mskim
 ```
 
 (스크린샷 첨부)
@@ -28,6 +28,10 @@ touch test.txt
 cp test.txt copy.txt
 mv copy.txt moved.txt
 rm moved.txt
+touch a.txt
+touch b.txt
+cp a.txt ./b.txt
+cp a.txt ../../Desktop
 ```
 
 (스크린샷 첨부)

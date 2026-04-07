@@ -4,7 +4,7 @@
 
 ```dockerfile
 FROM nginx:alpine
-COPY ./app /usr/share/nginx/html
+RUN echo "Dockerfile-nginx-webserver" > /usr/share/nginx/html/index.html
 ```
 
 ---

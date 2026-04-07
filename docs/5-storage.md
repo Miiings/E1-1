@@ -3,7 +3,7 @@
 ## 1. 바인드 마운트
 
 ```bash
-docker run -v $(pwd)/app:/usr/share/nginx/html -d -p 8080:80 my-web
+docker run -v $(pwd)/app:/usr/share/nginx/html -d -p 8080:80 my_image
 ```
 
 * 호스트에서 파일 수정 후 브라우저 반영 확인
