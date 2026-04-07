@@ -46,7 +46,7 @@
 - 파일 내용 확인
 - 권한 변경
 
-상세 로그: [docs/terminal.md](./docs/terminal.md)
+상세 로그: [docs/1-terminal.md](./docs/1-terminal.md)
 
 ### 4.2 Docker 기본 실습
 - docker --version
@@ -54,7 +54,7 @@
 - docker run hello-world
 - docker run -it ubuntu bash
 
-상세 로그: [docs/docker-basic.md](./docs/docker-basic.md)
+상세 로그: [docs/2-docker-basic.md](./docs/2-docker-basic.md)
 
 ### 4.3 Docker 운영 명령
 - docker images
@@ -62,7 +62,7 @@
 - docker logs
 - docker stats
 
-상세 로그: [docs/docker-ops.md](./docs/docker-ops.md)
+상세 로그: [docs/3-docker-ops.md](./docs/3-docker-ops.md)
 
 ### 4.4 Dockerfile 기반 웹 서버 실행
 - Dockerfile 작성
@@ -70,21 +70,21 @@
 - 컨테이너 실행
 - 웹 서버 접속 확인
 
-상세 로그: [docs/dockerfile.md](./docs/dockerfile.md)
+상세 로그: [docs/4-dockerfile.md](./docs/4-dockerfile.md)
 
 ### 4.5 바인드 마운트 / 볼륨
 - 바인드 마운트 반영 확인
 - Docker 볼륨 생성 및 연결
 - 컨테이너 삭제 전/후 데이터 유지 확인
 
-상세 로그: [docs/storage.md](./docs/storage.md)
+상세 로그: [docs/5-storage.md](./docs/5-storage.md)
 
 ### 4.6 Git / GitHub 연동
 - git config 설정
 - 저장소 생성
 - 원격 저장소 연결 및 push
 
-상세 로그: [docs/git.md](./docs/git.md)
+상세 로그: [docs/6-git.md](./docs/6-git.md)
 
 ---
 
