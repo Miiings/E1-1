@@ -16,9 +16,27 @@
 
 ## 2. 실행 환경
 - OS:
+```
+cjdrbf223275@c4r9s4 ~ % sw_vers
+ProductName:		macOS
+ProductVersion:		15.7.4
+BuildVersion:		24G517
+```
 - Shell / Terminal:
+```
+cjdrbf223275@c4r9s4 ~ % echo $SHELL
+/bin/zsh
+```
 - Docker:
+```
+cjdrbf223275@c4r9s4 ~ % docker --version
+Docker version 28.5.2, build ecc6942
+```
 - Git:
+```
+cjdrbf223275@c4r9s4 ~ % git --version
+git version 2.53.0
+```
 
 ---
 

@@ -22,8 +22,6 @@ cd mskim
 ## 3. 파일 생성 및 조작
 
 ```bash
-touch test.txt
-cp test.txt copy.txt
 mv copy.txt moved.txt
 rm moved.txt
 touch a.txt
