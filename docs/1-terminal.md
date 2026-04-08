@@ -6,8 +6,6 @@ pwd
 ls -la
 ```
 
-(스크린샷 첨부)
-
 ---
 
 ## 2. 디렉토리 생성 및 이동
@@ -17,9 +15,9 @@ mkdir mskim
 cd mskim
 ```
 
-(스크린샷 첨부)
-
 ---
+
+<img width="522" height="114" alt="Image" src="https://github.com/user-attachments/assets/d3b5ae76-f8cf-424a-ad53-1b59f1816390" />
 
 ## 3. 파일 생성 및 조작
 
@@ -34,9 +32,9 @@ cp a.txt ./b.txt
 cp a.txt ../../Desktop
 ```
 
-(스크린샷 첨부)
-
 ---
+
+<img width="379" height="128" alt="Image" src="https://github.com/user-attachments/assets/1db62465-f6e6-406e-9903-9ec9b05b3eca" />
 
 ## 4. 파일 내용 확인
 
@@ -44,9 +42,8 @@ cp a.txt ../../Desktop
 cat test.txt
 ```
 
-(스크린샷 첨부)
-
 ---
+
 
 ## 5. 권한 확인 및 변경
 
@@ -56,4 +53,3 @@ chmod 755 test.txt
 chmod 644 test.txt
 ```
 
-(변경 전/후 스크린샷 첨부)
