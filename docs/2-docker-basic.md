@@ -5,7 +5,8 @@
 docker --version
 docker info
 ```
-
+<img width="346" height="32" alt="Image" src="https://github.com/user-attachments/assets/547526bd-7c55-47a9-9f30-992a42e48fc2" />
+<img width="581" height="662" alt="Image" src="https://github.com/user-attachments/assets/7612cce5-dd7d-4111-96c1-e77e641515bc" />
 ---
 
 ## 2. hello-world 실행
@@ -28,7 +29,7 @@ docker run -it ubuntu bash
 
 ```bash
 ls
-echo "test"
+echo "abc"
 ```
 
 <img width="621" height="275" alt="Image" src="https://github.com/user-attachments/assets/ef11067e-49ea-4ca8-90b5-2fbb71e15330" />
