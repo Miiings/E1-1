@@ -52,4 +52,5 @@ ls -l
 chmod 755 test.txt
 chmod 644 test.txt
 ```
-
+<img width="478" height="195" alt="Image" src="https://github.com/user-attachments/assets/58de4522-d1be-4c01-856a-06719e07bea3" />
+<img width="422" height="446" alt="Image" src="https://github.com/user-attachments/assets/29aef69a-e10a-422a-9c20-64f91873a5e3" />
