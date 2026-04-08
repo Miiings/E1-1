@@ -6,8 +6,6 @@ docker --version
 docker info
 ```
 
-(스크린샷 첨부)
-
 ---
 
 ## 2. hello-world 실행
@@ -16,7 +14,7 @@ docker info
 docker run hello-world
 ```
 
-(스크린샷 첨부)
+<img width="610" height="388" alt="Image" src="https://github.com/user-attachments/assets/f4e17e2a-4f12-439a-a346-a48be090412a" />
 
 ---
 
@@ -33,4 +31,4 @@ ls
 echo "test"
 ```
 
-(스크린샷 첨부)
+<img width="621" height="275" alt="Image" src="https://github.com/user-attachments/assets/ef11067e-49ea-4ca8-90b5-2fbb71e15330" />
