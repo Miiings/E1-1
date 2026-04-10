@@ -2,9 +2,14 @@
 
 ## 개념 이해
 
+### 도커 쓰는 이유
+어디서 실행해도 동일하게 동작하는 환경을 하나로 묶어서 배포
+- 호스트: 컨테이너를 실행하는 실제 컴퓨터
+- 호스트와 OS 커널을 공유해서 VM처럼 os 복사할 필요는 없지만 파일/프로세스/네트워크는 격리됨 -> 가볍지만 독립적인 환경
+
 ### 이미지 vs 컨테이너
-- **이미지**: 실행 환경이 정의된 템플릿 (레시피에 비유 가능)
-- **컨테이너**: 이미지를 기반으로 실행된 실제 프로세스 (요리에 비유 가능)
+- **이미지**: 실행 환경이 정의된 템플릿 (설계도, 레시피)
+- **컨테이너**: 이미지를 기반으로 실행된 실제 프로세스 (안스턴스, 요리)
 - 하나의 이미지에서 여러 컨테이너를 생성할 수 있음
 
 ### Docker 기본 명령어 개요
@@ -22,6 +27,8 @@ docker --version
 docker info
 ```
 **출력 결과:**
+
+
 <img width="346" height="32" alt="Image" src="https://github.com/user-attachments/assets/547526bd-7c55-47a9-9f30-992a42e48fc2" />
 <img width="581" height="662" alt="Image" src="https://github.com/user-attachments/assets/7612cce5-dd7d-4111-96c1-e77e641515bc" />
 ---
@@ -36,7 +43,7 @@ docker run hello-world
 - Docker가 설치되고 정상 작동하는지 확인하는 가장 간단한 테스트
 - 원격 저장소에서 `hello-world` 이미지를 다운로드 후 컨테이너로 실행
 
-**출력 결과:**
+
 <img width="610" height="388" alt="Image" src="https://github.com/user-attachments/assets/f4e17e2a-4f12-439a-a346-a48be090412a" />
 
 ---
@@ -59,7 +66,6 @@ echo "abc"
 exit  # 컨테이너 빠져나가기
 ```
 
-**출력 결과:**
 <img width="621" height="275" alt="Image" src="https://github.com/user-attachments/assets/ef11067e-49ea-4ca8-90b5-2fbb71e15330" />
 
 **핵심 포인트:**
