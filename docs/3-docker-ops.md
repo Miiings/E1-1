@@ -82,3 +82,9 @@ docker stats
 CONTAINER ID   NAME          CPU %     MEM USAGE / LIMIT
 8bc95371db5d   quirky_jones  0.00%     4.219MiB / 7.777GiB
 ```
+
+---
+
+## 심층 인터뷰 관련 설명
+
+이 미션에서 가장 어려웠던 지점은 포트 매핑 실패였습니다. 가설로는 호스트 포트 충돌, 확인으로는 netstat 명령어로 포트 사용 상태를 확인, 조치로는 다른 포트 번호를 사용하여 문제를 해결했습니다. 근거는 Docker 로그와 시스템 명령어로 진단하였습니다.

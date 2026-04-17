@@ -96,7 +96,7 @@ docker run -d --name vol-test -v my-volume:/data ubuntu sleep infinity
 ```
 
 **옵션 설명:**
-- `-v my-volume:/data`: Docker 볼륨 마운트
+- `-v my-volume:/data`: Docker 볼륨 마운트 - 컨테이너 삭제 후에도 데이터가 유지됨
   - 볼륨 이름: `my-volume`
   - 컨테이너 마운트 경로: `/data`
 - `sleep infinity`: 컨테이너를 계속 실행 상태로 유지
@@ -147,8 +147,9 @@ exit
 hello
 ```
 
-**핵심점:** 
-✅ 컨테이너가 삭제되었지만 데이터는 **여전히 존재**함  
+**핵심점:**
+
+✅ 컨테이너가 삭제되었지만 데이터는 **여전히 존재**함 - Docker 볼륨을 사용하면 데이터 영속성을 제공  
 ✅ 동일 볼륨을 다른 컨테이너에서도 사용 가능
 
 ---

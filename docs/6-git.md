@@ -38,7 +38,7 @@ git config --list
 
 **설명:**
 - `--global`: 시스템 전체에 적용 (모든 저장소)
-- `user.name`, `user.email`: 커밋 작성자 정보
+- `user.name`, `user.email`: 커밋 작성자 정보 - Git 설정 및 GitHub 연동을 확인
 - `git config --list`: 현재 설정 확인
 
 **출력 결과:**
@@ -61,7 +61,7 @@ git remote add origin <repository-url>
 
 **명령어 설명:**
 - `git init`: 현재 디렉토리를 Git 저장소로 초기화 (`.git` 폴더 생성)
-- `git remote add origin <url>`: 원격 저장소 연결
+- `git remote add origin <url>`: 원격 저장소 연결 - GitHub 연동을 확인
   - `origin`: 원격 저장소의 기본 이름
   - `<repository-url>`: GitHub 저장소 URL (예: `https://github.com/username/repo.git`)
 
@@ -154,50 +154,6 @@ ghi9012 fix: bug in parser
 ✅ **백업**: 코드가 GitHub 클라우드에 안전하게 저장  
 ✅ **협업**: 팀원들이 동일한 저장소에서 작업 가능  
 ✅ **추적**: 누가, 언제, 무엇을 변경했는지 파악 가능
-
----
-
-## 트러블슈팅
-
-### 문제 1: 포트 충돌 (이미 사용 중인 포트)
-
-**현상:**
-```
-error: failed to push some refs to 'origin'
-hint: Updates were rejected because the tip of your current branch is behind
-```
-
-**원인:** 로컬과 원격 저장소의 커밋이 다름 (divergent branches)
-
-**해결:**
-```bash
-git config pull.rebase false  # merge 방식
-git config pull.rebase true   # rebase 방식
-git config pull.ff only       # fast-forward만 허용
-
-git pull origin main
-git push origin main
-```
-
-### 문제 2: 인증 오류
-
-**현상:**
-```
-fatal: Authentication failed for 'https://github.com/username/repo.git'
-```
-
-**원인:** GitHub 인증 정보 문제
-
-**해결:** 
-- GitHub Personal Access Token 생성 후 사용
-- SSH 키 설정으로 자동 인증
-
-### 문제 3: 데이터 손실 걱정
-
-**안심 포인트:**
-- Git은 모든 변경 사항을 기록
-- `git log` 또는 GitHub 웹에서 이전 버전 복구 가능
-- 로컬과 원격에 동시 백업
 
 ---
 

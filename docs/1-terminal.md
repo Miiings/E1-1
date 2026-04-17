@@ -58,8 +58,8 @@ pwd                  # 현재 위치 확인
 ```
 
 **설명:**
-- `mkdir`: 새 디렉토리 생성
-- `cd`: 디렉토리 변경 (Change Directory)
+- `mkdir`: 새 디렉토리 생성 - 폴더 생성의 흔적을 남김
+- `cd`: 디렉토리 변경 (Change Directory) - 이동 수행
 - `.`: 현재 디렉토리
 - `..`: 상위 디렉토리
 - `cd ~`: 홈 디렉토리로 이동
@@ -98,7 +98,7 @@ cp moved.txt ../../Desktop  # Desktop으로 복사
 - `cp file /path/`: 특정 디렉토리로 복사
 
 ### 파일 삭제
-- `rm filename`: 파일 삭제 (되돌릴 수 없음, 신중히!)
+- `rm filename`: 파일 삭제 (되돌릴 수 없음, 신중히!) - 삭제 수행의 흔적을 남김
 - `rm -r dirname`: 디렉토리와 내용 전체 삭제
 
 **출력 결과:**
@@ -158,6 +158,8 @@ chmod 644 test.txt  # 읽기/쓰기 권한
 - `2` (w): 쓰기 (write)
 - `1` (x): 실행 (execute)
 
+이는 8진수로 각 자리가 권한을 나타냅니다. `ls -l`로 권한 변경 결과를 확인할 수 있습니다.
+
 **출력 결과:**
 ```
 -rw-r--r-- 1 username staff 245 Apr 8 10:20 test.txt
@@ -178,8 +180,8 @@ chmod 644 test.txt  # 읽기/쓰기 권한
 ## 팁 및 주의사항
 
 📌 **상대 경로 vs 절대 경로**
-- 절대 경로: `/Users/username/Desktop` (루트에서 시작)
-- 상대 경로: `./Desktop` 또는 `../Desktop` (현재 위치 기준)
+- 절대 경로: `/Users/username/Desktop` (루트에서 시작) - 전체 경로를 지정할 때 사용
+- 상대 경로: `./Desktop` 또는 `../Desktop` (현재 위치 기준) - 현재 위치 기준으로 일관성을 위해 사용
 
 📌 **자동 완성**
 - 파일/폴더명 입력 후 `Tab` 키 누르면 자동 완성
