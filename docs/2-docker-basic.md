@@ -73,6 +73,3 @@ exit  # 컨테이너 빠져나가기
 
 <img width="621" height="275" alt="Image" src="https://github.com/user-attachments/assets/ef11067e-49ea-4ca8-90b5-2fbb71e15330" />
 
-**핵심 포인트:**
-- 컨테이너는 격리된 환경: 호스트와 별도의 파일시스템 보유
-- `-it` 옵션 없으면 쉘 접근 불가능

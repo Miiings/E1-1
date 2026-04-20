@@ -15,12 +15,8 @@
 
 ```dockerfile
 FROM nginx:alpine
-RUN echo "Dockerfile-nginx-webserver" > /usr/share/nginx/html/index.html
+COPY ./app /usr/share/nginx/html
 ```
-
-**각 라인 설명:**
-- `FROM nginx:alpine`: Nginx 웹 서버 이미지 (Alpine Linux 기반, 용량 작음)
-- `RUN`: 이미지 빌드 중에 명령 실행하여 HTML 파일 생성
 
 ---
 
@@ -83,15 +79,3 @@ curl http://localhost:8080
 ```
 Dockerfile-nginx-webserver
 ```
-
-**화면 확인:**
-브라우저에서 페이지 로드 시 위 메시지가 표시되면 성공
-
----
-
-## 핵심 요점
-
-✅ Dockerfile은 이미지 빌드 과정을 자동화  
-✅ `docker build`로 이미지 생성  
-✅ `docker run`으로 컨테이너 실행  
-✅ 포트 매핑으로 호스트와 컨테이너 연결
