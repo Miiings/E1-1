@@ -18,7 +18,7 @@ mkdir app
 echo "<h1>Dockerfile-nginx-webserver</h1>" > app/index.html
 
 # 바인드 마운트로 컨테이너 실행
-docker run -v $(pwd)/app:/usr/share/nginx/html -d -p 8080:80 my-image
+docker run -v $(pwd -P)/app:/usr/share/nginx/html -d -p 8080:80 my-image
 ```
 
 **호스트에서 파일 수정:**
